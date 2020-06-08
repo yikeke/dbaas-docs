@@ -30,7 +30,7 @@ TiDB Cloud is a fully-managed Database-as-a-Service (DBaaS) that brings everythi
 
     Data is replicated across multiple Availability Zones and backed up daily to ensure your service is always on.
 
-Expert Support
+- Expert Support
 
     We support thousands of TiDB users, and we bring that same experience to our TiDB Cloud users.
 
