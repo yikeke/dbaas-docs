@@ -13,7 +13,7 @@ This document describes how to sign up for a trial of TiDB Cloud and how to crea
 The most commonly used operations of TiDB Cloud are as follows:
 
 - [Sign up for a trial](#sign-up-for-a-trial): contact us through the website for a trial, and create your account.
-- [Create a cluster](#create-a-cluster): how to create your first cluster, select cloud provider，region, cluster tier, node number, and so on.
+- [Create a cluster](#create-a-cluster): how to create your first cluster, select cloud provider, region, cluster tier, node number, and so on.
 - [Secure Database Connections](secure-database-connections.md): connect to your TiDB Cloud cluster via a SQL client, or SQL shell.
 - [Migrate from MySQL](t-b-d): migrate your MySQL data to the TiDB Cloud cluster.  
 
@@ -61,7 +61,7 @@ Now you can visit TiDB Cloud to apply for a trial.
 
 6. Select **Tier**.
 
-Click to select your cluster tier, which determines the throughput and performance of your cluster. You cannot change it after the cluster is created. See [Cluster Tiers](t-b-d) for tier details.
+    Click to select your cluster tier, which determines the throughput and performance of your cluster. You cannot change it after the cluster is created. See [Cluster Tiers](t-b-d) for tier details.
 
 7. Select the number of nodes.
 
