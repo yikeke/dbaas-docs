@@ -46,7 +46,7 @@ Now you can visit TiDB Cloud to apply for a trial.
 
     ![Select Cloud Provider](/media/select-cloud-provider.png)
 
-3. Access the Create Cluster page.
+3. Access the **Create Cluster** page.
 
     On the TiDB Cluster page, click **Create Cluster** on the upper right. The Create Cluster page is displayed.
 
@@ -65,7 +65,7 @@ Now you can visit TiDB Cloud to apply for a trial.
 
 7. Select the number of nodes.
 
-    Set the number of your TiDB nodes and TiKV nodes respectively by clicking the plus or the minus sign. See [Size your Cluster](t-b-d) for details.
+    Set the number of your TiDB nodes and TiKV nodes respectively by clicking the plus or the minus sign. See [Size Your Cluster](t-b-d) for details.
 
 8. Click **Submit**.
 
