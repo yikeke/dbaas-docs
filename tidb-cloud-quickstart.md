@@ -34,6 +34,6 @@ Now you can visit TiDB Cloud to apply for a trial.
 
 4. You can invite other members to join your organization after your login. Refer to [Invite a team member](t-b-d) for details.
 
-# What's next
+## Create a cluster
 
-[Create a TiDB Cloud Cluster](tidb-cloud-create-a-cluster.md).
+See [Create a TiDB Cloud Cluster](tidb-cloud-create-a-cluster.md).
