@@ -13,8 +13,8 @@ This document describes how to sign up for a trial of TiDB Cloud and how to crea
 The most commonly used operations of TiDB Cloud are as follows:
 
 - [Sign up for a trial](#sign-up-for-a-trial): contact us through the website for a trial, and create your account.
-- [Create a cluster](#create-a-cluster): how to create your first cluster, select cloud provider, region, cluster tier, node number, and so on.
-- [Secure Database Connections](secure-database-connections.md): connect to your TiDB Cloud cluster via a SQL client, or SQL shell.
+- [Create a TiDB cluster](#create-a-cluster): how to create your first cluster, select cloud provider, region, cluster tier, node number, and so on.
+- [Connect to your TiDB cluster](secure-database-connections.md): connect to your TiDB Cloud cluster via a SQL client, or SQL shell.
 - [Migrate from MySQL](t-b-d): migrate your MySQL data to the TiDB Cloud cluster.  
 
 ## Sign up for a trial
@@ -37,3 +37,11 @@ Now you can visit TiDB Cloud to apply for a trial.
 ## Create a cluster
 
 See [Create a TiDB Cloud Cluster](tidb-cloud-create-a-cluster.md).
+
+## Connect to your cluster
+
+See [Connect to Your TiDB Cluster](connect-to-tidb-cluster.md#connect-via-sql-shell).
+
+## Explore SQL with TiDB
+
+See [Explore SQL with TiDB](https://pingcap.com/docs/stable/basic-sql-operations/).
