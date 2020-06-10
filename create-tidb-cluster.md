@@ -1,10 +1,9 @@
 ---
 title: Create a TiDB Cloud cluster
 summary: Learn how to create your TiDB Cloud cluster.
-category: quick start
 ---
 
-# Create a TiDB Cloud Cluster
+# Create a TiDB Cloud luster
 
 This document describes how to create a TiDB Cloud cluster.
 
