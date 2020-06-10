@@ -30,7 +30,7 @@
   + [Delete a TiDB Cluster](delete-tidb-cluster.md)
 + Migrate Data
   + [Export from MySQL Compatible Databases](migrate-data-into-tidb.md)
-  + [Import into TiDB Cloud](migrate-data-into-tidb.md#import-data-into-tidb-cloud)
+  + [Import into Your TiDB Cloud Cluster](migrate-data-into-tidb.md#import-data-into-tidb-cloud)
 + Export Data
 + User Access
 + Billing
