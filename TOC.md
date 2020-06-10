@@ -13,10 +13,10 @@
   + [Sign up for a Trial](tidb-cloud-quickstart.md#sign-up-for-a-trial)
   + [Create a TiDB Cluster](create-tidb-cluster.md)
 + Use Your Cluster
-  + [Set up VPC Peering Connections](set-up-vpc-peering-connections.md)
   + Connect to Your TiDB Cluster
     + [Connect via a SQL Client](connect-to-tidb-cluster.md#connect-via-a-sql-client)
     + [Connect via SQL Shell](connect-to-tidb-cluster.md#connect-via-sql-shell)
+  + [Set up VPC Peering Connections](set-up-vpc-peering-connections.md)
   + [Monitor a TiDB Cluster](monitor-tidb-cluster.md)
   + [Scale a TiDB Cluster](scale-tidb-cluter.md)
   + Backup and Restore Data
