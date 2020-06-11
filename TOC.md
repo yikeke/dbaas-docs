@@ -47,6 +47,7 @@
   + [Credits](tidb-cloud-billing.md#credits)
   + [Payment Method Setting](tidb-cloud-billing.md#payment-method-setting)
 + Reference
+  + [Service Level Agreement (SLA)](service-level-agreement.md)
   + [Supported TiDB Versions](supported-tidb-versions.md)
 + [Support](tidb-cloud-support.md)
 + FAQs
