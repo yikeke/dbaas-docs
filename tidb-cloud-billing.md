@@ -96,8 +96,6 @@ To add a credit card, perform the following steps:
 
 5. Click **Submit**.
 
-    ![Add a Card](/media/billing-add-a-card.png)
-
 > **Note:**
 >
 > To ensure the security of credit card sensitive data, TiDB Cloud does not save any customer credit card information and save them in the third-party payment platform Stripe. All billing deductions are completed through Stripe.
