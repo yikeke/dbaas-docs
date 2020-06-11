@@ -15,32 +15,32 @@ You can see the current status of each running cluster on the cluster page.
 
 | Cluster status | Description |
 |:--|:--|
-| Normal | Normal running (including data migration) |
-| Creating | Creating the cluster |
-| Scaling | Scaling the TiKV/TiDB nodes |
-| Upgrading | Upgrading the TiDB version |
-| Unavailable | The TiDB Cloud service is not available |
-| Unhealthy | Part of nodes are unavailable, not enough replicas, and so on |
-| Recovering | Backup recovery |
+| **Normal** | Normal running (including data migration) |
+| **Creating** | Creating the cluster |
+| **Scaling** | Scaling the TiKV/TiDB nodes |
+| **Upgrading** | Upgrading the TiDB version |
+| **Unavailable** | The TiDB Cloud service is not available |
+| **Unhealthy** | Part of nodes are unavailable, not enough replicas, and so on |
+| **Recovering** | Backup recovery |
 
 ### TiDB node status
 
 | TiDB node status | Description |
 |:--|:--|
-| Normal | Normal running |
-| Creating | Creating the node |
-| Unavailable | The TiDB node is not available |
-| Terminating | The TiDB node is terminating |
+| **Normal** | Normal running |
+| **Creating** | Creating the node |
+| **Unavailable** | The TiDB node is not available |
+| **Terminating** | The TiDB node is terminating |
 
 ### TiKV node status
 
 | TiKV node status | Description |
 |:--|:--|
-| Normal | Normal running |
-| Creating | Creating the node |
-| Unavailable | The TiKV node is not available |
-| Terminating | The TiKV node is terminating |
-| Leaving | Migrating the current node data before termination |
+| **Normal** | Normal running |
+| **Creating** | Creating the node |
+| **Unavailable** | The TiKV node is not available |
+| **Terminating** | The TiKV node is terminating |
+| **Leaving** | Migrating the current node data before termination |
 
 ## Monitoring metrics
 

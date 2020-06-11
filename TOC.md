@@ -31,11 +31,24 @@
 + Migrate Data
   + [Export from MySQL Compatible Databases](migrate-data-into-tidb.md)
   + [Import into Your TiDB Cloud Cluster](migrate-data-into-tidb.md#import-data-into-tidb-cloud)
-+ Export Data
-+ User Access
++ [Export Data](export-data-from-tidb-cloud.md)
++ Manage User Access
+  + [Sign in](manage-user-access.md)
+  + [Sign out](manage-user-access.md#sign-out)
+  + [View the Organization](manage-user-access.md#view-the-organization)
+  + [Invite a Team Member](manage-user-access.md#invite-a-team-member)
+  + [Remove a Team Member](manage-user-access.md#remove-a-team-member)
+  + [Set the Local Time Zone](manage-user-access.md#set-the-local-time-zone)
 + Billing
+  + [Node Cost](tidb-cloud-billing.md#node-cost)
+  + [Backup Storage Cost](tidb-cloud-billing.md#backup-storage-cost)
+  + [Data Transfer Cost](tidb-cloud-billing.md#data-transfer-cost)
+  + [Invoices](tidb-cloud-billing.md#invoices)
+  + [Credits](tidb-cloud-billing.md#credits)
+  + [Payment Method Setting](tidb-cloud-billing.md#payment-method-setting)
 + Reference
-+ Support
+  + [Supported TiDB Versions](supported-tidb-versions.md)
++ [Support](tidb-cloud-support.md)
 + FAQs
 + Releases
 + [Glossary](glossary.md)

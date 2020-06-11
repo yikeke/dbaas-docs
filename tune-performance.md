@@ -25,7 +25,7 @@ The results are displayed in the form of a table, and you can sort the results b
 
 ![Statement Analysis](/media/statement-analysis.png)
 
-For details, see [Statement Analysis](t-b-d).
+For details, see [Statement Execution Details in TiDB Dashboard](https://pingcap.com/docs/stable/dashboard/dashboard-statement-details/).
 
 ## Key Visualizer
 
