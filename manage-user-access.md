@@ -63,11 +63,11 @@ To invite a team member in an organization, perform the following steps:
 
 7. When the user receives this email, click the link in the email to verify the identity, and a new page displays.
 
-8. On the redirected page, the user needs to view and agree with our license, and then click **Submit** to create the account in TiDB Cloud. After that, the user is redirected to the login page.
+8. On the new page, the user needs to view and agree with our license, and then click **Submit** to create the account in TiDB Cloud. After that, the user is redirected to the login page.
 
 > Note:
 >
-> - Only accounts with Google accounts are supported now.
+> - Currently, TiDB Cloud only supports accounts signed in using Google accounts.
 > - The verification link in the email will expire in 24 hours. If your user doesn't receive the email, click the **Resend** button.
 
 ## Remove a team member
