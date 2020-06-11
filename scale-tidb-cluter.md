@@ -13,6 +13,6 @@ On TiDB Cloud, you can easily scale out or scale in your TiDB cluster by perform
 
 3. Click **Scale** In the drop-down menu. The **Scale** window displays.
 
-4。 In the **Scale** window, set the number of your TiDB nodes and TiKV nodes respectively by clicking the plus or the minus sign.
+4. In the **Scale** window, set the number of your TiDB nodes and TiKV nodes respectively by clicking the plus or the minus sign.
 
 5. Click **Confirm**.
