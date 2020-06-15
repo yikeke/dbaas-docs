@@ -26,8 +26,8 @@ You can also submit an upgrade request in the work order system. We will contact
     - Current TiDB version: xxx
     - Upgrade TiDB version: xxx
     - Login Email: xxx
-    - Cloud Provider: GCP
-    - Cluster Name: test cluster
+    - Cloud Provider: GCP or AWS
+    - Cluster Name: xxx
 
 5. Click **Submit**.
 
