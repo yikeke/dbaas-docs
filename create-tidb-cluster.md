@@ -32,11 +32,11 @@ This document describes how to create a TiDB Cloud cluster.
 
 6. Select **Tier**.
 
-    Click to select your cluster tier, which determines the throughput and performance of your cluster. You cannot change it after the cluster is created. See [Cluster Tiers](t-b-d) for tier details.
+    Click to select your cluster tier, which determines the throughput and performance of your cluster. You cannot change it after the cluster is created. See [Select Your Cluster Tier](select-cluster-tier.md) for details.
 
 7. Select the number of nodes.
 
-    Set the number of your TiDB nodes and TiKV nodes respectively by clicking the plus or the minus sign. See [Size Your Cluster](t-b-d) for details.
+    Set the number of your TiDB nodes and TiKV nodes respectively by clicking the plus or the minus sign. See [Size Your Cluster](size-your-cluster.md) for details.
 
 8. Click **Submit**.
 

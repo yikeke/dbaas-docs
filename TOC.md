@@ -47,6 +47,8 @@
   + [Credits](tidb-cloud-billing.md#credits)
   + [Payment Method Setting](tidb-cloud-billing.md#payment-method-setting)
 + Reference
+  + [Select Your Cluster Tier](select-cluster-tier.md)
+  + [Size Your TiDB Cluster](size-your-cluster.md)
   + [Supported TiDB Versions](supported-tidb-versions.md)
   + [Service Level Agreement (SLA)](service-level-agreement.md)
   + [Terms of Service](terms-of-service.md)
