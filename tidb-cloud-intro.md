@@ -48,4 +48,4 @@ TiDB Cloud is a fully-managed Database-as-a-Service (DBaaS) that brings everythi
 
 - Your VPC
 
-    You can connect to your TiDB cluster via a VPC peering connection. Refer to [Set up VPC Peering Connection](t-b-d) for details.
+    You can connect to your TiDB cluster via a VPC peering connection. Refer to [Set up VPC Peering Connection](set-up-vpc-peering-connections.md) for details.
