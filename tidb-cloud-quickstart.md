@@ -15,7 +15,7 @@ The most commonly used operations of TiDB Cloud are as follows:
 - [Sign up for a trial](#sign-up-for-a-trial): contact us through the website for a trial, and create your account.
 - [Create a TiDB cluster](#create-a-cluster): how to create your first cluster, select cloud provider, region, cluster tier, node number, and so on.
 - [Connect to your TiDB cluster](secure-database-connections.md): connect to your TiDB Cloud cluster via a SQL client, or SQL shell.
-- [Migrate from MySQL](t-b-d): migrate your MySQL data to the TiDB Cloud cluster.  
+- [Migrate from MySQL](migrate-data-into-tidb.md): migrate your MySQL data to the TiDB Cloud cluster.  
 
 ## Sign up for a trial
 
@@ -32,7 +32,7 @@ Now you can visit TiDB Cloud to apply for a trial.
 
 3. After the setting, you will receive an account activation email. Click the verification link in the email to access your TiDB Cloud account.
 
-4. You can invite other members to join your organization after your login. Refer to [Invite a team member](t-b-d) for details.
+4. You can invite other members to join your organization after your login. Refer to [Invite a team member](manage-user-access.md#invite-a-team-member) for details.
 
 ## Create a cluster
 
