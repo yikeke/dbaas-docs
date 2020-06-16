@@ -31,7 +31,7 @@
 + Migrate Data
   + [Export from MySQL Compatible Databases](migrate-data-into-tidb.md)
   + [Import into Your TiDB Cloud Cluster](migrate-data-into-tidb.md#import-data-into-tidb-cloud)
-+ [Export Data](export-data-from-tidb-cloud.md)
+  + [Export Data from TiDB Cloud](export-data-from-tidb-cloud.md)
 + Manage User Access
   + [Sign in](manage-user-access.md)
   + [Sign out](manage-user-access.md#sign-out)
@@ -53,6 +53,4 @@
   + [Service Level Agreement (SLA)](service-level-agreement.md)
   + [Terms of Service](terms-of-service.md)
 + [Support](tidb-cloud-support.md)
-+ FAQs
-+ Releases
 + [Glossary](glossary.md)
