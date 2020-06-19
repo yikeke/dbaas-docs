@@ -35,7 +35,7 @@ Currently, TiDB Cloud only supports VPC peering in the same region. TiDB cluster
 5. Find `<app-route-table-id>` via AWS command line.
 
     ```
-    aws ec2 describe-route-tables --region <app-region> --filters Name=vpc-id,Values=<app-vpc-id> --query RouteTables[*].RouteTableId
+    aws ec2 describe-route-tables --region <app-region> --filters Name=vpc-id,Values=<app-vpc-id> --query 'RouteTables[*].RouteTableId'
     ```
 
 6. Add a route to the TiDB Cloud VPC for each of your VPC subnet route tables.
