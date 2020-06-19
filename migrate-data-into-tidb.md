@@ -55,7 +55,7 @@ You can use [TiDB Lightning](https://github.com/pingcap/tidb-lightning) to quick
     sudo mv tidb-toolkit-v4.0.0-linux-amd64/bin/tidb-lightning* /usr/local/bin/
     ```
 
-2. Import data with TiDB Lightning:
+2. Import data using TiDB Lightning:
 
     ```
     tidb-lightning -backend=tidb -check-requirements=false -d=/path/to/export/dir -server-mode=false -tidb-host=${tidb_endpoint} -tidb-port=4000 -tidb-user=${user} -tidb-password=${password}
