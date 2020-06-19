@@ -31,7 +31,7 @@
 + Migrate Data
   + Migrate Data into TiDB
     + [Export Data from MySQL Compatible Databases](migrate-data-into-tidb.md#step-1-export-data-from-mysql-compatible-databases)
-    + [Import Data to Your TiDB Cluster](migrate-data-into-tidb.md#import-data-to-your-tidb-cluster)
+    + [Import Data to Your TiDB Cluster](migrate-data-into-tidb.md#step-2-import-data-to-your-tidb-cluster)
   + [Export Data from TiDB](export-data-from-tidb-cloud.md)
 + Manage User Access
   + [Sign in](manage-user-access.md)
