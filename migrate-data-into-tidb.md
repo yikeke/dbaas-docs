@@ -17,7 +17,7 @@ TiDB is a relational database highly compatible with MySQL. Therefore, the migra
 
 ## Step 1. Export data from MySQL compatible databases
 
-There are several ways to dump data from MySQL leveraging by tools such as `mysqldump` or `mydumper`. We recommend using the [Dumpling](https://github.com/pingcap/dumpling) for higher performance and compatiblity with TiDB, which is also one of the open source tools created by PingCAP.
+You can use several ways to dump data from MySQL, such as using `mysqldump` or `mydumper`. It is recommended to use the [Dumpling](https://github.com/pingcap/dumpling) tool for higher performance and compatibility with TiDB, which is also one of the open source tools created by PingCAP.
 
 1. Install Dumpling:
 
