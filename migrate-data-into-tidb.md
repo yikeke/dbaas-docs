@@ -1,6 +1,6 @@
 ---
 title: Migrate Data into TiDB
-summary: This page has instructions for migrating data from MySQL compatible databases to TiDB using the tools of `Dumpling` and `Lightning`.
+summary: This page has instructions for migrating data from MySQL compatible databases to TiDB using the tools of `Dumpling` and `TiDB Lightning`.
 ---
 
 # Migrate Data into TiDB
