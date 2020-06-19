@@ -9,11 +9,11 @@ TiDB is a relational database highly compatible with MySQL. Therefore, the migra
 
 > **Note:**
 >
-> TiDB Cloud currently only supports the following CI collations:
+> TiDB currently only supports the following CI collations:
 > - utf8_general_ci
 > - utf8mb4_general_ci
 >
-> Before migrating data from MySQL into TiDB Cloud, please confirm that the supported collations can meet your requirements.
+> Before migrating data from MySQL into TiDB, please confirm that the supported collations can meet your requirements.
 
 ## Step 1. Export data from MySQL compatible databases
 
@@ -43,7 +43,7 @@ There are several ways to dump data from MySQL leveraging by tools such as `mysq
     - `LOCK TABLES`
     - `REPLICATION CLIENT`
 
-## Step 2. Import data to your cluster in TiDB Cloud
+## Step 2. Import data to your TIDB cluster
 
 You can use [TiDB Lightning](https://github.com/pingcap/tidb-lightning) to quickly import the files exported from MySQL by `Dumpling` to TiDB.
 
