@@ -1,25 +1,23 @@
 ---
 title: Migrate Data into TiDB
-summary: Learn how to export data from MySQL compatible databases, and then import data into your TiDB Cloud cluster.
+summary: This page has instructions for migrating data from MySQL compatible databases to TiDB using the Dumpling and TiDB Lightning tools.
 ---
 
 # Migrate Data into TiDB
 
-TiDB Cloud is a MySQL compatible relational database. So data in MySQL compatible databases such as self-managed MySQL database, AWS Aurora, and Google Cloud SQL can be easily migrated to TiDB Cloud. This document describes how to export data from MySQL compatible databases, and then import data into TiDB Cloud.
+TiDB is a relational database highly compatible with MySQL. Therefore, the migration of data from any type of MySQL database to TiDB is very smooth, whether it is from a self-hosted MySQL instance or RDS service provided by the public cloud.
 
 > **Note:**
 >
-> TiDB Cloud currently only supports the following CI collations:
+> TiDB currently only supports the following CI collations:
 > - utf8_general_ci
 > - utf8mb4_general_ci
 >
-> Before migrating data from MySQL into TiDB Cloud, make sure the supported collations satisfy your requirements, otherwise the data cannot be imported into TiDB Cloud.
+> Before migrating data from MySQL into TiDB, confirm that the supported collations can meet your requirements.
 
-To migrate data from MySQL compatible databases, first [export data from MySQL compatible databases](#export-data-from-mysql-compatible-databases), and then [import data into TiDB Cloud](#import-data-into-tidb-cloud).
+## Step 1. Export data from MySQL compatible databases
 
-## Export data from MySQL compatible databases
-
-[Dumpling](https://github.com/pingcap/dumpling) is a MySQL compatible database backup tool. You need to use Dumpling to export data from MySQL.
+You can use several ways to dump data from MySQL, such as using `mysqldump` or `mydumper`. It is recommended to use the [Dumpling](https://github.com/pingcap/dumpling) tool for higher performance and compatibility with TiDB, which is also one of the open source tools created by PingCAP.
 
 1. Install Dumpling:
 
@@ -36,18 +34,18 @@ To migrate data from MySQL compatible databases, first [export data from MySQL c
     dumpling -h <mysql-host> -P 3306 -u <user> -F 64MiB -t 8 -o /path/to/export/dir
     ```
 
-    If you want to back up specific databases, use `-B` to specify comma separated database names.
+    If you want to export only the specified databases, use `-B` to specify a comma separated list of database names.
 
-    The minimum permission requirements are as follows:
+    The minimum permissions required are as follows:
 
     - `SELECT`
     - `RELOAD`
     - `LOCK TABLES`
     - `REPLICATION CLIENT`
 
-## Import data into your TiDB Cloud cluster
+## Step 2. Import data to your TIDB cluster
 
-After you have exported your MySQL database using Dumpling, you can use [TiDB Lightning](https://github.com/pingcap/tidb-lightning) to import the data into TiDB Cloud.
+You can use [TiDB Lightning](https://github.com/pingcap/tidb-lightning) to quickly import the files exported from MySQL by `Dumpling` to TiDB.
 
 1. Install TiDB Lightning:
 
