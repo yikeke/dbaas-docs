@@ -29,8 +29,9 @@
   + [Upgrade a TiDB Cluster](upgrade-tidb-cluster.md)
   + [Delete a TiDB Cluster](delete-tidb-cluster.md)
 + Migrate Data
-  + [Export from MySQL Compatible Databases](migrate-data-into-tidb.md)
-  + [Import into Your TiDB Cloud Cluster](migrate-data-into-tidb.md#import-data-into-tidb-cloud)
+  + Migrate Data into TiDB Cloud
+    + [Export from MySQL Compatible Databases](migrate-data-into-tidb.md)
+    + [Import into Your TiDB Cloud Cluster](migrate-data-into-tidb.md#import-data-into-tidb-cloud)
   + [Export Data from TiDB Cloud](export-data-from-tidb-cloud.md)
 + Manage User Access
   + [Sign in](manage-user-access.md)
