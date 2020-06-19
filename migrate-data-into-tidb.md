@@ -13,7 +13,7 @@ TiDB is a relational database highly compatible with MySQL. Therefore, the migra
 > - utf8_general_ci
 > - utf8mb4_general_ci
 >
-> Before migrating data from MySQL into TiDB, please confirm that the supported collations can meet your requirements.
+> Before migrating data from MySQL into TiDB, confirm that the supported collations can meet your requirements.
 
 ## Step 1. Export data from MySQL compatible databases
 
