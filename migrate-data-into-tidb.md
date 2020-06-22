@@ -17,7 +17,7 @@ TiDB is a relational database highly compatible with MySQL. Therefore, the migra
 
 ## Step 1. Export data from MySQL compatible databases
 
-You can use several ways to dump data from MySQL, such as using `mysqldump` or `mydumper`. It is recommended to use the [Dumpling](https://github.com/pingcap/dumpling) tool for higher performance and compatibility with TiDB, which is also one of the open source tools created by PingCAP.
+You can use several ways to dump data from MySQL, such as using `mysqldump` or `mydumper`. It is recommended to use the [Dumpling](https://docs.pingcap.com/tidb/v4.0/export-or-backup-using-dumpling) tool for higher performance and compatibility with TiDB, which is also one of the open source tools created by PingCAP.
 
 1. Install Dumpling:
 
@@ -45,7 +45,7 @@ You can use several ways to dump data from MySQL, such as using `mysqldump` or `
 
 ## Step 2. Import data to your TIDB cluster
 
-You can use [TiDB Lightning](https://github.com/pingcap/tidb-lightning) to quickly import the files exported from MySQL by `Dumpling` to TiDB.
+You can use [TiDB Lightning](https://docs.pingcap.com/tidb/dev/tidb-lightning-overview) to quickly import the files exported from MySQL by `Dumpling` to TiDB.
 
 1. Install TiDB Lightning:
 
