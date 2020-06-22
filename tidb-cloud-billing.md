@@ -15,7 +15,7 @@ The pricing formula is as follows:
 
 Cluster tier price per hour = TiDB unit price per hour × TiDB node number + TiKV unit price per hour × TiKV node number
 
-For TiDB / TiKV unit price in different cloud service providers, and different regional node price, refer to [https://pingcap.com/product/tidbcloud](https://pingcap.com/product/tidbcloud).
+For TiDB / TiKV unit price in different cloud service providers, and different regional node price, refer to <https://pingcap.com/product/tidbcloud>.
 
 ## Backup storage cost
 

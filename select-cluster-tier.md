@@ -19,7 +19,7 @@ When creating a cluster, you need to select a cluster tier, which determines the
 
 | Cluster tier | Node | CPU | Memory | Storage | Scenario |
 | :-- | :-- | :-- | :-- | :-- | :-- |
-| t1.tiny | TiKV | 2 vCPU | 4 G | 50 G EBS | Testing or development |
+| t1.tiny | TiKV | 2 vCPU | 2 G | 50 G EBS | Testing or development |
 | t1.tiny | TiDB | 2 vCPU | 2 G | / | Testing or development |
 | t1.standard | TiKV | 8 vCPU | 61 G | 1900 G NVMe | Production |
 | t1.standard | TiDB | 8 vCPU | 16 G | / | Production |
@@ -30,9 +30,9 @@ When creating a cluster, you need to select a cluster tier, which determines the
 
 | Cluster tier | Node | CPU | Memory | Storage | Scenario |
 | :-- | :-- | :-- | :-- | :-- | :-- |
-| t1.tiny | TiKV | 1 vCPU | 3.75 G | 50 G | Testing or development|
-| t1.tiny | TiDB | 1 vCPU | 3.75 G | / | Testing or development|
-| t1.standard | TiKV | 8 vCPU | 64 G | 1125 G | Production |
+| t1.tiny | TiKV | 1 vCPU | 3 G | 50 G | Testing or development|
+| t1.tiny | TiDB | 1 vCPU | 3 G | / | Testing or development|
+| t1.standard | TiKV | 8 vCPU | 64 G | 1105 G | Production |
 | t1.standard | TiDB | 8 vCPU | 32 G | / | Production |
-| t1.highcpu | TiKV | 16 vCPU | 128 G | 1125 G | Production (mission-critical applications, high throughput, low latency) |
+| t1.highcpu | TiKV | 16 vCPU | 128 G | 1105 G | Production (mission-critical applications, high throughput, low latency) |
 | t1.highcpu | TiDB | 8 vCPU | 32 G | / | Production (mission-critical applications, high throughput, low latency) |
