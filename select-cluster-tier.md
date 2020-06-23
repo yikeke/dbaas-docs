@@ -30,5 +30,5 @@ When creating a cluster, you need to select a cluster tier, which determines the
 | :-- | :-- | :-- | :-- | :-- | :-- |
 | t1.tiny | TiKV | 1 vCPU | 3 G | 50 G | Testing or development|
 | t1.tiny | TiDB | 1 vCPU | 3 G | / | Testing or development|
-| t1.standard | TiKV | 8 vCPU | 64 G | 1875 G | Production |
-| t1.standard | TiDB | 8 vCPU | 32 G | / | Production |
+| t1.standard | TiKV | 8 vCPU | 52 G | 1875 G | Production |
+| t1.standard | TiDB | 8 vCPU | 30 G | / | Production |
