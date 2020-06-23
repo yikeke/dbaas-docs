@@ -39,13 +39,13 @@ If we do not achieve and maintain the monthly uptime percentages, then you may b
 
 ## Credit Request
 
-To receive a service credit, you must submit a claim by creating a work order through the TiDB Cloud support center, To be eligible, the credit request must be received by us by the end of the second billing cycle after which the incident occurred. The necessary information for the work order must include:
+To receive a service credit, you must submit a claim by creating a work order through the TiDB Cloud support center. To be eligible, the credit request must be received by us by the end of the second billing cycle after the incident occurred. The necessary information for the work order must include:
 
 - A detailed description of the event that caused the service unavailable
 - Downtime and duration
 - Descriptions of your attempts to resolve the downtime at the time of occurrence
 
-If we confirm that the monthly uptime percentage is less than the service commitment, we will issue the service credit to you within one billing cycle following the month in which the request occurred. If the submission is overdue, or you fail to provide the necessary information, you will lose your eligibility for the service credit. service credits must not be transferred or used in any other account.
+If we confirm that the monthly uptime percentage is less than the service commitment, we will issue the service credit to you within one billing cycle following the month in which the request occurred. If the submission is overdue, or you fail to provide the necessary information, you will lose your eligibility for the service credits. Service credits must not be transferred or used in any other account.
 
 ## Limitations
 

@@ -33,7 +33,7 @@ You understand and agree that we may change, suspend, or discontinue any or all 
 
 - 2.2.2 When the General Data Protection Regulation ("GDPR") applies to your use of the TiDB Cloud Services to process "personal data" (as defined in the GDPR) that is uploaded to TiDB Cloud Services under your account, this Agreement incorporate the GDPR terms.
 
-2.3 The non-exclusive rights you grant to us to access and process customer data are used only to the extent required to provide TiDB Cloud Services. We will not access or use such data except as necessary to maintain or provide the TiDB Cloud Services, or as necessary to comply with the law or a binding order of a governmental body. We will only use your Content in accordance with the Privacy Policy (currently located at: https://pingcap.com/privacy-policy/), and you consent to such usage.
+2.3 The non-exclusive rights you grant to us to access and process customer data are used only to the extent required to provide TiDB Cloud Services. We will not access or use such data except as necessary to maintain or provide the TiDB Cloud Services, or as necessary to comply with the law or a binding order of a governmental body. We will only use your Content in accordance with the Privacy Policy (currently located at: <https://pingcap.com/privacy-policy>), and you consent to such usage.
 
 2.4 We will maintain commercially reasonable administrative, physical, and technical controls over the availability, security and confidentiality of customer data stored in the TiDB Cloud Services.
 

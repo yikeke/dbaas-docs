@@ -43,7 +43,7 @@ You can use several ways to dump data from MySQL, such as using `mysqldump` or `
     - `LOCK TABLES`
     - `REPLICATION CLIENT`
 
-## Step 2. Import data to your TIDB cluster
+## Step 2. Import data to your TiDB cluster
 
 You can use [TiDB Lightning](https://docs.pingcap.com/tidb/v4.0/tidb-lightning-overview) to quickly import the files exported from MySQL by `Dumpling` to TiDB.
 
