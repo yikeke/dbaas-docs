@@ -7,7 +7,7 @@ summary: Learn how to contact the support team of TiDB Cloud.
 
 TiDB Cloud offers support services to your organization. To contact our support team, perform the following steps:
 
-1. Click **Support** on the upper right of the top navigation bar, and click **Contact Support**. The customer support page opens.
+1. Click **Support** on the upper right of the top navigation bar, and click **Contact Support**. The [customer support page](https://support.pingcap.com/) opens.
 
 2. **Sign in** with your TiDB Cloud account.
 
