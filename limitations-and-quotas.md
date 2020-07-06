@@ -16,12 +16,12 @@ These tables outline limits and quotas.
 
 | Component | Limit |
 |-|-|
-| Maximum number of TiDB nodes in a cluster | 99 |
-| Maximum number of TiKV nodes in a cluster | 99 |
-| Maximum number of clusters in a region | 99 |
 | Number of data replicas | 3 |
-| Number of Availability Zones for a deployment | 3 |
+| Number of Availability Zones for a cross-zone deployment | 3 |
 
+> **Note:**
+>
+> If you want to learn more about common usage limitations of TiDB, please refer to [TiDB Limitations](https://docs.pingcap.com/tidb/stable/tidb-limitations).
 
 ## Cluster Quotas
 
@@ -29,7 +29,3 @@ These tables outline limits and quotas.
 |-|-|
 | Maximum number of total TiDB nodes for all clusters in your organization | 20 |
 | Maximum number of total TiKV nodes for all clusters in your organization | 30 |
-
-> **Note:**
->
-> If you want to learn more about common usage limitations of TiDB, please refer to [TiDB Limitations](https://docs.pingcap.com/tidb/stable/tidb-limitations).
