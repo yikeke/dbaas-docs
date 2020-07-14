@@ -15,7 +15,7 @@ Currently, TiDB Cloud only supports VPC peering in the same region. TiDB cluster
 
     If your VPC has already peered with other VPCs, make sure all the peered VPCs are not overlapped with `10.250.0.0/16`.
 
-2. Visit [TiDB Cloud support](https://support.pingcap.com) and submit a request to provide the following information:
+2. Visit [TiDB Cloud support page](https://support.pingcap.com) and submit a request to provide the following information:
 
     - VPC ID: `<app-vpc-id>`
     - Region: `<app-region>`
