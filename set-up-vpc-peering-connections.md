@@ -21,7 +21,7 @@ Currently, TiDB Cloud only supports VPC peering in the same region. TiDB cluster
     - Region: `<app-region>`
     - Account ID: `<app-account-id>`
 
-3. We will create a VPC peering for your VPC and reply the following information in the request:
+3. We will create a VPC peering for your VPC and reply with the following information in the request:
 
     - TiDB peer connect id: `<pcx-tidb-to-app-id>`
     - TiDB private hosted zone for you: `<tidb-phz-id>`
