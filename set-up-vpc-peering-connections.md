@@ -7,7 +7,7 @@ summary: Learn how to set up VPC peering connections.
 
 To connect your application to TiDB Cloud, you need to set up [VPC peering](glossary.md#vpc-peering) with TiDB Cloud. It's one step of [Connect to Your TiDB Cluster](connect-to-tidb-cluster.md). This document walks you through setting up VPC peering connections on AWS or GCP.
 
-Currently, TiDB Cloud only supports VPC peering in the same region. TiDB clusters in the same region are created in a VPC with the `10.250.0.0/16` CIDR (Classless Inter-Domain Routing) block. VPC peering setup differs among cloud providers.
+Currently, TiDB Cloud only supports VPC peering in the same region. TiDB clusters in the same region are created in a VPC with the `10.250.0.0/16` CIDR (Classless Inter-Domain Routing) block. So once a VPC peering is set up in the region, all the TiDB clusters created in this region can be connected in your VPC. VPC peering setup differs among cloud providers.
 
 ## On AWS
 
@@ -18,6 +18,7 @@ Currently, TiDB Cloud only supports VPC peering in the same region. TiDB cluster
 2. Visit the [TiDB Cloud support page](https://support.pingcap.com) and submit a request to provide the following information:
 
     - VPC ID: `<app-vpc-id>`
+    - VPC CIDR: `<app-vpc-cidr>`
     - Region: `<app-region>`
     - Account ID: `<app-account-id>`
 
@@ -59,7 +60,7 @@ Currently, TiDB Cloud only supports VPC peering in the same region. TiDB cluster
 
 ## On GCP
 
-1. Contact the TiDB Cloud support team to provide information about your application GCP project:
+1. Visit the [TiDB Cloud support page](https://support.pingcap.com) and submit a request to provide the following information about your application GCP project:
 
     - Application GCP project ID: `<app-project-id>`
     - VPC network name: `<vpc-network-name>`
