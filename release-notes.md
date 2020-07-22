@@ -7,3 +7,4 @@
 * Send emails when adding credits for customers [#103](https://github.com/pingcap/dbaas-docs/issues/103)
 * Add tenant id in tenant preference page [#102](https://github.com/pingcap/dbaas-docs/issues/102)
 * Optimze the reasonable notice message for user's quota limit [#93](https://github.com/pingcap/dbaas-docs/issues/93)
+* Fix backup/restore metrics [#2140](https://github.com/pingcap/dbaas/pull/2140)
