@@ -1,6 +1,6 @@
 <NavColumns>
 <NavColumn>
-<ColumnTitle>1. Sign in the AWS Console.<ColumnTitle>
+1. Sign in the `AWS Console`.
   
 ![sign-in-aws](/peering/img/sign-in-aws.png)
 </NavColumn>
