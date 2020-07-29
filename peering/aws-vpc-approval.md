@@ -8,11 +8,11 @@
 
 1.2. Click on `Services` in the top navigation bar, and input `VPC` to search.
 
-![sign-in-aws](/peering/img/vpc-search.jpg)
+![services](/peering/img/vpc-search.jpg)
 
 1.3. Click `Peering Connections`,  select the right peer connection according to the peering id and accept it.
 
-![sign-in-aws](/peering/img/accept peering.jpg)
+![accept](/peering/img/accept-peering.jpg)
 
 </NavColumn>
 </NavColumns>
