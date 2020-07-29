@@ -56,7 +56,7 @@
 
 3.5. Enable DNS resolution.
 
-![Enable dns resolution](/peering/img/enable-dns-solution.jpg)
+![Enable dns resolution](/peering/img/enable-dns-solution.png)
 
 </NavColumn>
 
