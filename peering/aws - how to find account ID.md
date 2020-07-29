@@ -1,10 +1,8 @@
-<NavColumns>
-<NavColumn>
- #1. Sign in the `AWS Console`.
+# 1. Sign in the `AWS Console`.
   
 ![sign-in-aws](/peering/img/sign-in-aws.png)
-</NavColumn>
 
+<NavColumns>
 <NavColumn>
 <ColumnTitle>2. Click on the account name in the top navigation bar, and select `my Account`.</ColumnTitle>
   
