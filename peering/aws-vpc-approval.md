@@ -21,7 +21,7 @@
 
 2.1. Click `Route tables`,  select the right route tables according to your VPC id. 
 
-![Select-route-tables](/peering/img/select-route-tables.png)
+![Select-route-tables](/peering/img/select-route-tables.jpg)
 
 2.2. Select the submenu `Routes`,  and click `Edit routes`.
 
@@ -40,7 +40,7 @@
 
 3.1. Click `Your VPCs`,  select the right vpc according to your VPC id.
 
-![Select-vpc](/peering/img/select-vpc.png)
+![Select-vpc](/peering/img/select-vpc.jpg)
 
 3.2. Mouse over the selected VPC,  right-click pops up the setting window, and Click `Edit DNS hostnames`;
 
@@ -48,7 +48,7 @@
 
 3.3. Enable DNS hostnames.
 
-![Enable dns hostnames](/peering/img/enable-dns-hostnames.jpg)
+![Enable dns hostnames](/peering/img/enable-dns-hostnames.png)
 
 3.4. Mouse over the selected VPC,  right-click pops up the setting window, and Click `Edit  DNS resolution`;
 
