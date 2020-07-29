@@ -2,18 +2,11 @@
   
 ![sign-in-aws](/peering/img/sign-in-aws.png)
 
-<NavColumns>
-<NavColumn>
-<ColumnTitle>2. Click on the account name in the top navigation bar, and select `my Account`.</ColumnTitle>
-  
-  
+
+### 2. Click on the account name in the top navigation bar, and select `my Account`.
+
 ![my-account-menu](/peering/img/my-account-menu.png)
-</NavColumn>
 
-
-<NavColumn>
-<ColumnTitle>3. In the Account Setting section, you can find the account id in the first line.</ColumnTitle>
+### 3. In the Account Setting section, you can find the account id in the first line.
     
 ![account-id](/peering/img/account-id.png)
-</NavColumn>
-<NavColumns>
