@@ -1,7 +1,7 @@
 
 <NavColumns>
 <NavColumn>
-<ColumnTitle>1. Click ![gcp-button](/peering/img/gcp-button.png) on the top navi bar,  and select `VPC network`.<ColumnTitle>
+<ColumnTitle>1. Click on the top navi bar,  and select `VPC network`.<ColumnTitle>
 ![gcp-vpc-network](/peering/img/gcp-vpc-network.png)
 </NavColumn>
   
