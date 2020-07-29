@@ -2,6 +2,6 @@
 
 <NavColumns>
 <NavColumn>
-1. sign in the AWS Console
-![sign in](/media/select-cloud-provider.png)
+- 1. sign in the AWS Console
+- ![sign in](/media/select-cloud-provider.png)
 </NavColumn>
