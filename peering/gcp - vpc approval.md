@@ -1,13 +1,13 @@
 
 <NavColumns>
 <NavColumn>
-<ColumnTitle>1. Sign in the GCloud console. <ColumnTitle>
+<ColumnTitle>1. Sign in the `GCloud console`. <ColumnTitle>
 
 ![gcp-console](/peering/img/gcp-console.png)
 </NavColumn>
 
 <NavColumn>
-<ColumnTitle>2. Click               on the top navi bar,  and select `VPC network peering`.<ColumnTitle>
+<ColumnTitle>2. Click = on the top navi bar,  and select `VPC network peering`.<ColumnTitle>
 
 ![gcp-vpc-network](/peering/img/gcp-vpc-network.jpg)
 </NavColumn>
