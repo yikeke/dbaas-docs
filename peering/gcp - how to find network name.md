@@ -3,7 +3,7 @@
 <NavColumn>
 <ColumnTitle>1. Click on the top navi bar,  and select `VPC network`.<ColumnTitle>
   
-![gcp-vpc-network](/peering/img/gcp-vpc-network.png)
+![gcp-vpc-network](/peering/img/gcp-vpc-network.jpg)
 </NavColumn>
   
 <NavColumn>
