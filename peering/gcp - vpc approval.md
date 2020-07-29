@@ -19,7 +19,7 @@
 </NavColumn>
 
 <NavColumn>
-<ColumnTitle>4. Fill up VPC Project ids, and the network names, then click `CREATE`.<ColumnTitle>
+<ColumnTitle>4. Fill up project ids, and network names, then click `CREATE`.<ColumnTitle>
 
 ![create-peering](/peering/img/create-peering.png)
 </NavColumn>
