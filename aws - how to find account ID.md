@@ -6,7 +6,7 @@
 </NavColumn>
 
 <NavColumn>
-<ColumnTitle>2. click on the account name in the top navigation bar, and select `my account`.<ColumnTitle>
+<ColumnTitle>2. click on the account name in the top navigation bar, and select `my Account`.<ColumnTitle>
   
   
 ![my-account-menu](/peering/img/my-account-menu.png)
