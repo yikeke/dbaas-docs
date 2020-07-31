@@ -11,6 +11,6 @@
 
 ![creating-peering-button](/peering/img/creating-peering-button.jpg)
 
-### 4. Fill up project ids, and network names, then click on `CREATE`.
+### 4. Enter the project ID and VPC network name, and then click **CREATE**.
 
 ![create-peering](/peering/img/create-peering.png)
