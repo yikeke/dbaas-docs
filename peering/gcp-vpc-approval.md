@@ -7,7 +7,7 @@
 
 ![gcp-vpc-network](/peering/img/gcp-vpc-network.jpg)
 
-### 3. Click on `CREATE PEERING CONNECTION`.
+### 3. Click **CREATE PEERING CONNECTION**.
 
 ![creating-peering-button](/peering/img/creating-peering-button.jpg)
 
