@@ -3,7 +3,7 @@
 
 ![gcp-console](/peering/img/gcp-console.png)
 
-### 2. Click ![gcp-button](/peering/img/gcp-button.png) on the top navi bar,  and select `VPC network peering`.
+### 2. In the top navigation bar, click ![gcp-button](/peering/img/gcp-button.png), and select **VPC network peering**.
 
 ![gcp-vpc-network](/peering/img/gcp-vpc-network.jpg)
 
