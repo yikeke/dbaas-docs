@@ -6,6 +6,6 @@
 
 ![my-account-menu](/peering/img/my-account-menu.png)
 
-### 3. In the `Account Setting` section, you can find the `Account Id` in the first line.
+### 3. In the **Account Settings** section, you can see **Account Id** in the first line.
     
 ![account-id](/peering/img/account-id.png)
