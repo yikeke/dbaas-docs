@@ -2,7 +2,7 @@
   
 ![sign-in-aws](/peering/img/sign-in-aws.png)
 
-### 2. Click on the account name in the top navigation bar, and select `My Account`.
+### 2. In the top navigation bar, click on the account name and select **My Account**.
 
 ![my-account-menu](/peering/img/my-account-menu.png)
 
