@@ -1,4 +1,4 @@
-### 1. Sign in the AWS Console.
+### 1. Sign in to the AWS console.
   
 ![sign-in-aws](/peering/img/sign-in-aws.png)
 
