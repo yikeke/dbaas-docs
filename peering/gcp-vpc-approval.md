@@ -1,5 +1,5 @@
 
-### 1. Sign in the `GCloud console`. 
+### 1. Sign in to the Google Cloud Console. 
 
 ![gcp-console](/peering/img/gcp-console.png)
 
