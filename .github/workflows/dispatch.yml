@@ -1,4 +1,4 @@
-name: Repsitory dispatch workflow from docs-dbaas
+name: Trigger website docs build when pr pushed
 
 on:
   push:
