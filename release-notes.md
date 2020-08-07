@@ -1,7 +1,7 @@
 
 ## August 6, 2020
 
-* Change email support to visit TiDB cloud support [#135](https://github.com/pingcap/dbaas-docs/issues/135)
+* Change email support to visiting TiDB Cloud Customer Support [#135](https://github.com/pingcap/dbaas-docs/issues/135)
 * Add the simple 2fa feature for custom email login [#127](https://github.com/pingcap/dbaas-docs/issues/127)
 * Add the feature of setting up VPC peering [#126](https://github.com/pingcap/dbaas-docs/issues/126)
 * Add custom email support for signup/login [#99](https://github.com/pingcap/dbaas-docs/issues/99)
