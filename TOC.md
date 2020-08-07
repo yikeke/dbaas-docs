@@ -53,5 +53,6 @@
   + [Supported TiDB Versions](supported-tidb-versions.md)
   + [Service Level Agreement (SLA)](service-level-agreement.md)
   + [Terms of Service](terms-of-service.md)
+  + [Release Notes](release-notes.md)
 + [Support](tidb-cloud-support.md)
 + [Glossary](glossary.md)
