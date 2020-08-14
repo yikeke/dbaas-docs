@@ -7,6 +7,8 @@ summary: Learn how to monitor your TiDB cluster.
 
 This document describes how to monitor a TiDB cluster on TiDB Cloud.
 
+<EmbedYouTube videoTitle="TiDB Cloud - Manage and Monitor a Cluster" videoSrcURL="https://www.youtube.com/embed/W1C0JMJszKo?rel=0" />
+
 ## Cluster status and node status
 
 You can see the current status of each running cluster on the cluster page.

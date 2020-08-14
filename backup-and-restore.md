@@ -7,6 +7,8 @@ summary: Learn how to back up and restore your TiDB Cloud cluster.
 
 This document describes how to back up and restore your TiDB cluster data on TiDB Cloud.
 
+<EmbedYouTube videoTitle="TiDB Cloud - Backup a Cluster" videoSrcURL="https://www.youtube.com/embed/Ln4hU5IMkbE?rel=0" />
+
 ## Backup
 
 TiDB Cloud provides two types of data backup: automatic backup and ad-hoc backup.

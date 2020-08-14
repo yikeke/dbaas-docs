@@ -7,6 +7,8 @@ summary: Learn how to scale your TiDB Cloud cluster.
 
 On TiDB Cloud, you can easily scale out or scale in your TiDB cluster by performing the following steps:
 
+<EmbedYouTube videoTitle="TiDB Cloud - Scale a Cluster" videoSrcURL="https://www.youtube.com/embed/rwx2zc0f8X8?rel=0" />
+
 1. Navigate to the **TiDB Cluster** page.
 
 2. Click **Setting** on the upper right of the cluster you want to scale.

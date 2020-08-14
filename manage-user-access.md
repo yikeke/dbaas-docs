@@ -7,6 +7,8 @@ summary: Learn how to manage the user access in your TiDB Cloud cluster.
 
 This document describes how to manage the user access in your TiDB Cloud cluster.
 
+<EmbedYouTube videoTitle="TiDB Cloud - User Management" videoSrcURL="https://www.youtube.com/embed/bJwkqw3jLd8?rel=0" />
+
 ## Sign in
 
 If you already created a TiDB Cloud account using your Google account, sign in to your Google account.
