@@ -7,6 +7,8 @@ summary: Learn how to create your TiDB Cloud cluster.
 
 This document describes how to create a TiDB Cloud cluster.
 
+<EmbedYouTube videoTitle="TiDB Cloud - Create a Cluster" videoSrcURL="https://www.youtube.com/embed/uGRoKiETSUU?rel=0" />
+
 1. Log in to TiDB Cloud.
 
     Open <https://tidbcloud.com> in a browser and click **Sign in with Google**. The TiDB Cluster page displays.
