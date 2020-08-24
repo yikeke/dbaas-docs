@@ -57,16 +57,15 @@ app_vpc_id="<Your VPC ID>"
 tidb_phz_id="<TiDB private hosted zone for you>"
 ```
 
-> **Note:**
-    > For example, in this guide, we use the information we get after we created the application.
-    >
-    > ```{.output}
-    > # Set up the related variables
-    > pcx_tidb_to_app_id="pcx-069f41efddcff66c8"
-    > app_region="us-west-2"
-    > app_vpc_id="vpc-0039fb90bb5cf8698"
-    > tidb_phz_id="Z07551272U929P4PN8MQT"
-    > ```
+For example, in this guide, we use the information we get after we created the application.
+
+```{.output}
+# Set up the related variables
+pcx_tidb_to_app_id="pcx-069f41efddcff66c8"
+app_region="us-west-2"
+app_vpc_id="vpc-0039fb90bb5cf8698"
+tidb_phz_id="Z07551272U929P4PN8MQT"
+```
 
 After setting the variables, we execute the commands below.
 
