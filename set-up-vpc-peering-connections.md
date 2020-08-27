@@ -37,7 +37,7 @@ You will get the guidance like this.
 
 #### Approve and configure for VPC peering
 
-Install awscli and configure awscli according to your account info. You could refert to AWS cli configure quickstart to know how to get the information the awscli need. [AWS User Guide: AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+Install awscli and configure awscli according to your account info. You could see AWS cli configure quickstart to know how to get the information the awscli need. [AWS User Guide: AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
 
 ```{.bash .copyable}
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
