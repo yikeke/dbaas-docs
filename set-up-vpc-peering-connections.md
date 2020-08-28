@@ -47,7 +47,7 @@ sudo ./aws/install
 aws configure
 ```
 
-Replace the contents included by '<>', execute these commands
+Replace the contents included by `<>`, execute these commands
 
 ```{.bash .copyable}
 # Set up the related variables
