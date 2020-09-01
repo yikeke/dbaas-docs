@@ -33,6 +33,7 @@ summary: Learn about TiDB Cloud documentation.
 - [Connect to a TiDB Cluster](connect-to-tidb-cluster.md)
 - [Monitor a TiDB Cluster](monitor-tidb-cluster.md)
 - [Scale a TiDB Cluster](scale-tidb-cluter.md)
+- [Use an HTAP cluster](use-htap-cluster.md)
 - [Backup and Restore Data](backup-and-restore.md)
 - [Upgrade a TiDB Cluster](upgrade-tidb-cluster.md)
 

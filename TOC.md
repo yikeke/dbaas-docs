@@ -19,6 +19,7 @@
   + [Set up VPC Peering Connections](set-up-vpc-peering-connections.md)
   + [Monitor a TiDB Cluster](monitor-tidb-cluster.md)
   + [Scale a TiDB Cluster](scale-tidb-cluter.md)
+  + [Use an HTAP Cluster](use-htap-cluster.md)
   + Backup and Restore Data
     + [Automatic Backup](backup-and-restore.md#automatic-backup)
     + [Ad-hoc Backup](backup-and-restore.md#ad-hoc-backup)

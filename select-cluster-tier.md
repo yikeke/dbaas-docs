@@ -23,6 +23,9 @@ When creating a cluster, you need to select a cluster tier, which determines the
 | t1.tiny | TiDB | 2 vCPU | 2 G | / | Testing or development |
 | t1.standard | TiKV | 8 vCPU | 61 G | 1900 G NVMe | Production |
 | t1.standard | TiDB | 8 vCPU | 16 G | / | Production |
+| h1.standard | TiKV | 8 vCPU | 61 G | 1900 G NVMe | Production |
+| h1.standard | TiFlash | 8 vCPU | 61 G | 1900 G NVMe | Production |
+| h1.standard | TiDB | 8 vCPU | 16 G | / | Production |
 
 ## GCP Tiers
 
@@ -32,3 +35,6 @@ When creating a cluster, you need to select a cluster tier, which determines the
 | t1.tiny | TiDB | 1 vCPU | 3 G | / | Testing or development|
 | t1.standard | TiKV | 8 vCPU | 52 G | 1875 G | Production |
 | t1.standard | TiDB | 8 vCPU | 30 G | / | Production |
+| h1.standard | TiKV | 8 vCPU | 52 G | 1875 G | Production |
+| h1.standard | TiFlash | 8 vCPU | 52 G | 1875 G | Production |
+| h1.standard | TiDB | 8 vCPU | 30 G | / | Production |
