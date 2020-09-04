@@ -7,6 +7,10 @@ summary: Learn about the release notes of TiDB Cloud.
 
 This page lists the release notes of [TiDB Cloud](https://pingcap.com/products/tidbcloud).
 
+## September 4, 2020
+
+* Fix an incorrect URL in invitation Email
+
 ## September 1, 2020
 
 * Add the ability for customers to create and manage a new type of cluster: h1.standard
