@@ -5,8 +5,7 @@ summary: Learn the limitations and quotas in TiDB Cloud.
 
 # Limitations and Quotas in TiDB Cloud
 
-TiDB Cloud limits how many of each kind of component you can create, and the common usage limitations of TiDB. In addition, there are some orgnization-level quotas to limit the amount of resources created by users to prevent from creating more resources than you actually need.
-These tables outline limits and quotas. 
+TiDB Cloud limits how many of each kind of component you can create, and the common usage limitations of TiDB. In addition, there are some organization-level quotas to limit the amount of resources created by users to prevent from creating more resources than you actually need. These tables outline limits and quotas.
 
 > **Note:**
 >
@@ -15,7 +14,7 @@ These tables outline limits and quotas.
 ## Cluster Limits
 
 | Component | Limit |
-|-|-|
+|:-|:-|
 | Number of data replicas | 3 |
 | Number of Availability Zones for a cross-zone deployment | 3 |
 
@@ -26,6 +25,6 @@ These tables outline limits and quotas.
 ## Cluster Quotas
 
 | Component | Quota (default) |
-|-|-|
+|:-|:-|
 | Maximum number of total TiDB nodes for all clusters in your organization | 20 |
 | Maximum number of total TiKV nodes for all clusters in your organization | 30 |

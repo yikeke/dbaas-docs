@@ -33,7 +33,7 @@ The storage prices for different cloud providers are as follows:
 
 ## Data Transfer cost
 
-Data transfer costs depend on the cloud service provider where you deployed the cluster. 
+Data transfer costs depend on the cloud service provider where you deployed the cluster.
 
 - AWS
 

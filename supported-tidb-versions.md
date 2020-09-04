@@ -7,4 +7,4 @@ summary: Learn how the supported TiDB versions n TiDB Cloud.
 
 This document lists the supported TiDB versions in TiDB Cloud. Currently, TiDB Cloud supported the following TiDB versions:
 
-- v4.0.1
+- v4.0.5

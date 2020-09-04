@@ -5,7 +5,7 @@ summary: Learn how to use HTAP cluster in TiDB Cloud.
 
 # Use an HTAP Cluster
 
-[HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing) means Hibrid Transactional/Analytical Processing. With TiDB Cloud, you can create an HTAP cluster by choosing the `h1.standard` cluster tier.
+[HTAP](https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing) means Hybrid Transactional/Analytical Processing. With TiDB Cloud, you can create an HTAP cluster by choosing the `h1.standard` cluster tier.
 
 The HTAP cluster in TiDB Cloud is composed of [TiKV](https://tikv.org), a row-based storage engine designed for transactional processing, and [TiFlash](https://docs.pingcap.com/tidb/stable/tiflash-overview), a columnar storage designed for analytical processing. Your application data is first stored in TiKV and then replicated to TiFlash via the Raft consensus algorithm. So it's real time synchronization between the row store and the columnar store.
 

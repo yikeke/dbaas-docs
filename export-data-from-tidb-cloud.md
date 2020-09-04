@@ -15,7 +15,9 @@ You can use the same tool [Dumpling](https://github.com/pingcap/dumpling) for da
 
 1. Install Dumpling.
 
-    ```
+    {{< copyable "shell-regular" >}}
+
+    ```shell
     wget https://download.pingcap.org/dumpling-nightly-linux-amd64.tar.gz
     tar xzf dumpling-nightly-linux-amd64.tar.gz
     chmod +x dumpling
@@ -24,7 +26,9 @@ You can use the same tool [Dumpling](https://github.com/pingcap/dumpling) for da
 
 2. Export your data using Dumpling from TiDB.
 
-    ```
+    {{< copyable "shell-regular" >}}
+
+    ```shell
     dumpling -h ${tidb-endpoint} -P 3306 -u ${user} -F 67108864 -t 4 -o /path/to/export/dir
     ```
 

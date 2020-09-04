@@ -10,6 +10,7 @@ TiDB is a relational database highly compatible with MySQL. Therefore, the migra
 > **Note:**
 >
 > TiDB currently only supports the following CI collations:
+>
 > - utf8_general_ci
 > - utf8mb4_general_ci
 >
@@ -21,7 +22,9 @@ You can use several ways to dump data from MySQL, such as using `mysqldump` or `
 
 1. Install Dumpling:
 
-    ```
+    {{< copyable "shell-regular" >}}
+
+    ```shell
     wget https://download.pingcap.org/dumpling-nightly-linux-amd64.tar.gz
     tar xzf dumpling-nightly-linux-amd64.tar.gz
     chmod +x dumpling
@@ -30,7 +33,9 @@ You can use several ways to dump data from MySQL, such as using `mysqldump` or `
 
 2. Export your MySQL database using Dumpling:
 
-    ```
+    {{< copyable "shell-regular" >}}
+
+    ```shell
     dumpling -h <mysql-host> -P 3306 -u <user> -F 64MiB -t 8 -o /path/to/export/dir
     ```
 
@@ -49,7 +54,9 @@ You can use [TiDB Lightning](https://docs.pingcap.com/tidb/v4.0/tidb-lightning-o
 
 1. Install TiDB Lightning:
 
-    ```
+    {{< copyable "shell-regular" >}}
+
+    ```shell
     wget https://download.pingcap.org/tidb-toolkit-v4.0.0-linux-amd64.tar.gz
     tar xzf tidb-toolkit-v4.0.0-linux-amd64.tar.gz
     sudo mv tidb-toolkit-v4.0.0-linux-amd64/bin/tidb-lightning* /usr/local/bin/
@@ -57,6 +64,8 @@ You can use [TiDB Lightning](https://docs.pingcap.com/tidb/v4.0/tidb-lightning-o
 
 2. Import data using TiDB Lightning:
 
-    ```
+    {{< copyable "shell-regular" >}}
+
+    ```shell
     tidb-lightning -backend=tidb -check-requirements=false -d=/path/to/export/dir -server-mode=false -tidb-host=${tidb_endpoint} -tidb-port=4000 -tidb-user=${user} -tidb-password=${password}
     ```

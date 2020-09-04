@@ -22,7 +22,9 @@ To connect to your TiDB cluster using a SQL client, perform the following steps:
 
 4. Use a SQL client to connect to TiDB from your server which has set up VPC peering with TiDB Cloud.
 
-    ```sql
+    {{< copyable "shell" >}}
+
+    ```shell
     mysql -u root -h <endpoint> -P 4000 -p
     ```
 
