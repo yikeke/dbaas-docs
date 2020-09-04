@@ -1,145 +1,165 @@
 ---
-title: Set up VPC Peering Connections
+title: Set Up VPC Peering Connections
 summary: Learn how to set up VPC peering connections.
 ---
 
-# Set up VPC Peering Connections
+# Set Up VPC Peering Connections
 
-To connect your application to TiDB Cloud, you need to set up [VPC peering](glossary.md#vpc-peering) with TiDB Cloud. It's one step of [Connect to Your TiDB Cluster](connect-to-tidb-cluster.md). This document walks you through setting up VPC peering connections on AWS or GCP.
+To connect your application to TiDB Cloud, you need to set up [VPC peering](glossary.md#vpc-peering) with TiDB Cloud. It's one step of [Connect to Your TiDB Cluster](connect-to-tidb-cluster.md). This document walks you through setting up VPC peering connections [on AWS](#on-aws) and [on GCP](#on-gcp).
 
 VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IP addresses. Instances in either VPC can communicate with each other as if they are within the same network.
-
-![VPC peering Introduction](media/vpc-peering/vpc-peering-topology.png)
 
 Currently, TiDB Cloud only supports VPC peering in the same region. TiDB clusters in the same region are created in a VPC with the `10.250.0.0/16` CIDR (Classless Inter-Domain Routing) block. So once a VPC peering is set up in the region, all the TiDB clusters created in this region can be connected in your VPC. VPC peering setup differs among cloud providers.
 
 ## On AWS
 
-### Set up VPC peering connections
+### Step 1: Add VPC peering requests
 
-#### Add VPC peering requests
+1. Go to the **Network Access** page and click **Add**.
 
-To make a VPC peering connection request, you could go to the 'Network Access' page. Click the 'Add' button.
+    ![TiDB Cloud Network Access](media/vpc-peering/tidb-cloud-network-access-dashboard.png)
 
-![TiDB Cloud Network Access](media/vpc-peering/tidb-cloud-network-access-dashboard.png)
+2. On the **Add VPC Peering** dialog, fill in the required information of your existing AWS VPC:
 
-You could get the information from your VPC details on the VPC dashboard.
+    - AWS Account ID
+    - VPC ID
+    - CIDR
+    - Region
 
-![VPC peering](media/vpc-peering/vpc-peering-creating-infos.png)
+    You could get these information from your VPC details on the VPC dashboard.
 
-Fill the information into the blank of the 'Add' application form. Click the 'Initialize' button.
+    ![VPC peering](media/vpc-peering/vpc-peering-creating-infos.png)
 
-![Information needed for the VPC peering request](media/vpc-peering/tidb-cloud-vpc-peering-create-dashboard.png)
+3. Click **Initialize**. The **Approve VPC Peerings** dialog displays.
 
-You will get the guidance like this.
+    ![Add VPC peering](media/vpc-peering/tidb-cloud-vpc-peering-env-check-information.png)
 
-![Add VPC peering](media/vpc-peering/tidb-cloud-vpc-peering-env-check-information.png)
+### Step 2: Approve and configure the VPC peering
 
-#### Approve and configure for VPC peering
+Use either of the following two options to approve and configure the VPC peering connection:
 
-Install awscli and configure awscli according to your account info. You could see AWS cli configure quickstart to know how to get the information the awscli need. [AWS User Guide: AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+- [Option 1: Use AWS CLI](#option-1-use-aws-cli)
+- [Option 2: Use the AWS dashboard](#option-2-use-the-aws-dashboard)
 
-```{.bash .copyable}
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
-# Configure the awscli according to your account info
-aws configure
-```
+#### Option 1: Use AWS CLI
 
-Replace the contents included by `<>`, execute these commands
+1. Install AWS Command Line Interface (AWS CLI).
 
-```{.bash .copyable}
-# Set up the related variables
-pcx_tidb_to_app_id="<TiDB peering id>"
-app_region="<APP Region>"
-app_vpc_id="<Your VPC ID>"
-tidb_phz_id="<TiDB private hosted zone for you>"
-```
+    {{< copyable "shell-regular" >}}
 
-For example, in this guide, we use the information we get after we created the application.
+    ```bash
+    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    unzip awscliv2.zip
+    sudo ./aws/install
+    ```
 
-```{.output}
-# Set up the related variables
-pcx_tidb_to_app_id="pcx-069f41efddcff66c8"
-app_region="us-west-2"
-app_vpc_id="vpc-0039fb90bb5cf8698"
-tidb_phz_id="Z07551272U929P4PN8MQT"
-```
+2. Configure AWS CLI according to your account information. To get the information required by AWS CLI, see [AWS CLI configuration basics](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html).
 
-After setting the variables, we execute the commands below.
+    {{< copyable "shell-regular" >}}
 
-```{.bash .copyable}
-# accept VPC peering connection request
-aws ec2 accept-vpc-peering-connection --vpc-peering-connection-id "$pcx_tidb_to_app_id"
+    ```bash
+    aws configure
+    ```
 
-# create route table roules
-aws ec2 describe-route-tables --region "$app_region" --filters Name=vpc-id,Values="$app_vpc_id" --query 'RouteTables[*].RouteTableId' --output text|xargs -d "\t" -n 1|  while read row
-do
-    app_route_table_id="$row"
-    aws ec2 create-route --route-table-id "$app_route_table_id" --destination-cidr-block 10.250.0.0/16 --vpc-peering-connection-id "$pcx_tidb_to_app_id"
-done
+3. Replace the following variable values with your account information.
 
-# modify vpc attribute to enable DNS-hostname and DNS-support
-aws ec2 modify-vpc-attribute --vpc-id "$app_vpc_id" --enable-dns-hostnames
-aws ec2 modify-vpc-attribute --vpc-id "$app_vpc_id" --enable-dns-support
-```
+    {{< copyable "shell-regular" >}}
 
-After finishing the configuration, the VPC peering has been created. We could connect to the TiDB cluster to verify the result.
+    ```bash
+    # Set up the related variables.
+    pcx_tidb_to_app_id="<TiDB peering id>"
+    app_region="<APP Region>"
+    app_vpc_id="<Your VPC ID>"
+    tidb_phz_id="<TiDB private hosted zone for you>"
+    ```
 
-#### Connect to the TiDB cluster on the TiDB Cloud
+    For example:
 
-Navigate to the TiDB Cluster page. Click the 'Connect' Button
+    ```
+    # Set up the related variables
+    pcx_tidb_to_app_id="pcx-069f41efddcff66c8"
+    app_region="us-west-2"
+    app_vpc_id="vpc-0039fb90bb5cf8698"
+    tidb_phz_id="Z07551272U929P4PN8MQT"
+    ```
 
-![TiDB cloud cluster info](media/vpc-peering/tidb-cloud-cluster-info-connect-button.png)
+4. Execute the following commands.
 
-We could see the status of the VPC peering is activated. The connection information is shown below. We could access the TiDB Cluster from the instance within the VPC.
+    {{< copyable "shell-regular" >}}
 
-![TiDB cloud cluster info dashboard](media/vpc-peering/tidb-cloud-cluster-info-connection-info-dashboard.png)
+    ```bash
+    # Accepts the VPC peering connection request.
+    aws ec2 accept-vpc-peering-connection --vpc-peering-connection-id "$pcx_tidb_to_app_id"
+    ```
 
-### (Options) Approve and configure the VPC on AWS dashboard
+    {{< copyable "shell-regular" >}}
 
-To explain what we have done in the shell scripts, we could follow the guide below to get familiar with the details.
+    ```bash
+    # Creates route table rules.
+    aws ec2 describe-route-tables --region "$app_region" --filters Name=vpc-id,Values="$app_vpc_id" --query 'RouteTables[*].RouteTableId' --output text|xargs -d "\t" -n 1|  while read row
+    do
+        app_route_table_id="$row"
+        aws ec2 create-route --route-table-id "$app_route_table_id" --destination-cidr-block 10.250.0.0/16 --vpc-peering-connection-id "$pcx_tidb_to_app_id"
+    done
+    ```
 
-#### 1. Confirm to accept the peer connection request in your AWS console.
+    {{< copyable "shell-regular" >}}
 
-##### 1.1 Sign in the AWS console and open the VPC service page
+    ```bash
+    # Modifies the VPC attribute to enable DNS-hostname and DNS-support.
+    aws ec2 modify-vpc-attribute --vpc-id "$app_vpc_id" --enable-dns-hostnames
+    aws ec2 modify-vpc-attribute --vpc-id "$app_vpc_id" --enable-dns-support
+    ```
 
-![AWS dashboard](media/vpc-peering/aws-vpc-guide-1.jpg)
+After finishing the configuration, the VPC peering has been created. You can [connect to the TiDB cluster](#step-3-connect-to-the-tidb-cluster-on-the-tidb-cloud) to verify the result.
 
-##### 1.2 Navigate the Peering Connections tab, you will see a peering connection in the 'Pending Acceptance' state, confirm the request owner is TiDB Cloud (380838443567) and accept the request
+#### Option 2: Use the AWS dashboard
 
-![AWS VPC peering connections](media/vpc-peering/aws-vpc-guide-2.jpg)
+You can also use the AWS dashboard to configure the VPC peering connection.
 
-![AWS VPC peering requests](media/vpc-peering/aws-vpc-guide-3.png)
+1. Confirm to accept the peer connection request in your AWS console.
 
-#### 2. Add a route to the TiDB Cloud VPC for each of your VPC subnet route tables
+    1. Sign in to the AWS console and click **Services** on the top menu bar. Enter "VPC" in the search box and come to the VPC service page.
 
-##### 2.1. Click Route tables, search all the route tables that belong to your application VPC
+        ![AWS dashboard](media/vpc-peering/aws-vpc-guide-1.jpg)
 
-![Search all route tables related to VPC](media/vpc-peering/aws-vpc-guide-4.png)
+    2. From the left navigation bar, open the **Peering Connections** page. On the **Create Peering Connection** tab, a peering connection is in the **Pending Acceptance** status.
 
-##### 2.2. Edit each route table to add a route with destination to the TiDB Cloud VPC CIDR (10.250.0.0/16) and peering connection id
+    3. Confirm the requester owner is TiDB Cloud (`380838443567`). Right click on the peering connection and click **Accept Request** to accept the request.
 
-![Edit all route tables](media/vpc-peering/aws-vpc-guide-5.png)
+        ![AWS VPC peering requests](media/vpc-peering/aws-vpc-guide-3.png)
 
-#### 3、Make sure you have enabled private DNS hosted zone support for your VPC.
+2. Add a route to the TiDB Cloud VPC for each of your VPC subnet route tables.
 
-##### 3.1. Select your application VPC
+    1. From the left navigation bar, open the **Route Tables** page.
 
-![Select your application VPC](media/vpc-peering/aws-vpc-guide-6.png)
+    2. Search all the route tables that belong to your application VPC.
 
-##### 3.2. Mouse over the selected VPC, right-click pops up the setting window
+        ![Search all route tables related to VPC](media/vpc-peering/aws-vpc-guide-4.png)
 
-![Right-click the setting window](media/vpc-peering/aws-vpc-guide-7.png)
+    3. Edit each route table to add a route with destination to the TiDB Cloud VPC CIDR (`10.250.0.0/16`), and select your peering ID on the **Target** column.
 
-##### 3.3. Click the Edit DNS hostnames menu to enable DNS hostnames
+        ![Edit all route tables](media/vpc-peering/aws-vpc-guide-5.png)
 
-![Edit DNS hostname](media/vpc-peering/aws-vpc-guide-8.png)
+3. Make sure you have enabled private DNS hosted zone support for your VPC.
 
-##### 3.4. Click Edit DNS resolution menu to enable DNS resolution
+    1. From the left navigation bar, open the **Your VPCs** page.
 
-![Edit DNS resolution settings](media/vpc-peering/aws-vpc-guide-9.png)
+    2. Select your application VPC.
+
+    3. Right click on the selected VPC. The setting drop-down list displays.
+
+    4. From the setting drop-down list, click **Edit DNS hostnames**. Enable DNS hostnames and click **Save**.
+
+    5. From the setting drop-down list, click **Edit DNS resolution**. Enable DNS resolution and click **Save**.
+
+### Step 3: Connect to the TiDB cluster on TiDB Cloud
+
+1. Navigate to the **TiDB Cluster** page and find your cluster.
+
+2. Click **Connect**. The **Connect to TiDB** dialog displays. You could see the **Status** of the VPC peering is **active**.
+
+3. Access the TiDB Cluster from the instance within the VPC. See [Connect to Your TiDB Cluster](connect-to-tidb-cluster.md).
 
 ## On GCP
 

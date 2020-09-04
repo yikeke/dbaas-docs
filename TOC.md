@@ -16,7 +16,7 @@
   + Connect to Your TiDB Cluster
     + [Connect via a SQL Client](connect-to-tidb-cluster.md)
     + [Connect via SQL Shell](connect-to-tidb-cluster.md#connect-via-sql-shell)
-  + [Set up VPC Peering Connections](set-up-vpc-peering-connections.md)
+  + [Set Up VPC Peering Connections](set-up-vpc-peering-connections.md)
   + [Monitor a TiDB Cluster](monitor-tidb-cluster.md)
   + [Scale a TiDB Cluster](scale-tidb-cluter.md)
   + [Use an HTAP Cluster](use-htap-cluster.md)
