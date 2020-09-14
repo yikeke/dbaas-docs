@@ -7,6 +7,13 @@ summary: Learn about the release notes of TiDB Cloud.
 
 This page lists the release notes of [TiDB Cloud](https://pingcap.com/products/tidbcloud).
 
+
+## September 11, 2020
+
+* Customers now can access TiDB using a public endpoint with traffic filters
+* Add the time zone indicator at the auto backup settings dialog
+* Fix the broken invitation link when registration is not finished
+
 ## September 4, 2020
 
 * Fix an incorrect URL in invitation Email
