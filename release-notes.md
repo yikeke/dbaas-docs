@@ -7,6 +7,10 @@ summary: Learn about the release notes of TiDB Cloud.
 
 This page lists the release notes of [TiDB Cloud](https://pingcap.com/products/tidbcloud).
 
+## September 14, 2020
+
+* Fix monitoring metrics by adding the `region` label
+* Fix the issue that non-HTAP clusters cannot be scaled
 
 ## September 11, 2020
 
