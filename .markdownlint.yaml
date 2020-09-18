@@ -1,4 +1,4 @@
-comment: 'Rules for PingCAP docs-dm'
+comment: 'Rules for TiDB Cloud dbaas-docs'
 
 # disable all by default
 default: false
