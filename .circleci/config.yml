@@ -6,37 +6,16 @@ jobs:
       - image: circleci/node:lts
     working_directory: ~/tidbcloud/dbaas-docs
     steps:
+      steps:
       - checkout
-
-      - run:
-          name: Setup
-          command: |
-            mkdir ~/.npm-global
-            npm config set prefix '~/.npm-global'
-            echo 'export PATH=~/.npm-global/bin:$PATH' >> $BASH_ENV
-            echo 'export NODE_PATH=~/.npm-global/lib/node_modules:$NODE_PATH' >> $BASH_ENV
       - run:
           name: "Install markdownlint"
           command: |
-            npm install -g markdownlint-cli@0.17.0
+            sudo npm install -g markdownlint-cli@0.17.0
       - run:
-          name: "Lint edited files"
+          name: "Lint"
           command: |
-            git remote add upstream https://github.com/tidbcloud/dbaas-docs.git
-            git fetch upstream
-            markdownlint $(git diff-tree --name-only --no-commit-id -r upstream/master..HEAD -- '*.md' ':(exclude).github/*')
-      - run:
-         name: "Check links"
-         command: |
-           scripts/verify-links.sh
-      - run:
-         name: "Check link anchors"
-         command: |
-           scripts/verify-link-anchors.sh
-      - run:
-         name: "Check unclosed tags"
-         command:
-           python3 scripts/check-tags.py $(git diff-tree --name-only --no-commit-id -r upstream/master..HEAD -- '*.md' ':(exclude).github/*')
+            markdownlint .
 
   build:
     docker:
