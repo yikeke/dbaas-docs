@@ -25,25 +25,25 @@ This page lists the release notes of [TiDB Cloud](https://pingcap.com/products/t
 ## September 1, 2020
 
 * Add the ability for customers to create and manage a new type of cluster: h1.standard
-  * Customers now have the option of t1.tiny, t1.standard and h1.standard
-  * H1.standard uses TiFlash to utilize the Analytical Processing of the TiDB cluster
+    * Customers now have the option of t1.tiny, t1.standard and h1.standard
+    * H1.standard uses TiFlash to utilize the Analytical Processing of the TiDB cluster
 * Adjust the tiny cluster instance type and minimum TiDB node count
 * Adjust the tiny and standard cluster price to align with changes to the instance types
 
 ## August 6, 2020
 
-* Change email support to visiting TiDB Cloud Customer Support [#135](https://github.com/pingcap/dbaas-docs/issues/135)
-* Add the simple 2fa feature for custom email login [#127](https://github.com/pingcap/dbaas-docs/issues/127)
-* Add the feature of setting up VPC peering [#126](https://github.com/pingcap/dbaas-docs/issues/126)
-* Add custom email support for signup/login [#99](https://github.com/pingcap/dbaas-docs/issues/99)
+* Change email support to visiting TiDB Cloud Customer Support
+* Add the simple 2fa feature for custom email login
+* Add the feature of setting up VPC peering
+* Add custom email support for signup/login
 
 ## July 17, 2020
 
-* Adjust the default retention of automated daily backup to 7 days [#94](https://github.com/pingcap/dbaas-docs/issues/94)
-* Add reasons at tooltip for clusters in unhealthy status [#74](https://github.com/pingcap/dbaas-docs/issues/74)
-* Fix the issue that when the initial credit is 0, users can still create a cluster [#95](https://github.com/pingcap/dbaas-docs/issues/95)
-* Optimize the integration of Dashboard [#96](https://github.com/pingcap/dbaas-docs/issues/96)
-* Send emails when adding credits for customers [#103](https://github.com/pingcap/dbaas-docs/issues/103)
-* Add the tenant ID in the tenant preference page [#102](https://github.com/pingcap/dbaas-docs/issues/102)
-* Optimize the reasonable notice message for user's quota limit [#93](https://github.com/pingcap/dbaas-docs/issues/93)
-* Fix backup/restore metrics [#2140](https://github.com/pingcap/dbaas/pull/2140)
+* Adjust the default retention of automated daily backup to 7 days
+* Add reasons at tooltip for clusters in unhealthy status
+* Fix the issue that when the initial credit is 0, users can still create a cluster
+* Optimize the integration of Dashboard
+* Send emails when adding credits for customers
+* Add the tenant ID in the tenant preference page
+* Optimize the reasonable notice message for user's quota limit
+* Fix backup/restore metrics
