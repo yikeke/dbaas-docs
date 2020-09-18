@@ -25,8 +25,8 @@ This page lists the release notes of [TiDB Cloud](https://pingcap.com/products/t
 ## September 1, 2020
 
 * Add the ability for customers to create and manage a new type of cluster: h1.standard
-  * Customers now have the option of t1.tiny, t1.standard and h1.standard
-  * H1.standard uses TiFlash to utilize the Analytical Processing of the TiDB cluster
+    * Customers now have the option of t1.tiny, t1.standard and h1.standard
+    * H1.standard uses TiFlash to utilize the Analytical Processing of the TiDB cluster
 * Adjust the tiny cluster instance type and minimum TiDB node count
 * Adjust the tiny and standard cluster price to align with changes to the instance types
 
