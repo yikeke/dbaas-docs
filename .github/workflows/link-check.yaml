@@ -15,16 +15,16 @@ jobs:
       #  - we hardcode `--document-root` to `/github/workspace` in the container now.
       #  - we use `http://172.*` as sample addresses in some docs, so we need to exclude them.
 
-      - name: Check external links in en files
+      - name: Check external links
         id: lc
         uses: peter-evans/link-checker@v1
         with:
-          args: -c 32 -d /github/workspace -r -x "http://172.*|https://github.com/pingcap/dm/pull/.*|.*.md" *
+          args: -c 32 -d /github/workspace -r -x "http://172.*|.*.md" *
 
       - name: Fail if there were external link errors
         if: ${{ steps.lc.outputs.exit_code }}
         run: |
-          echo "Please check the broken links reported in previous step \"Check external links in en files\"."
+          echo "Please check the broken links reported in previous step \"Check external links\"."
           exit ${{ steps.lc.outputs.exit_code }}
 
       # Debug via SSH if previous steps failed
