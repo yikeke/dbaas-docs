@@ -46,7 +46,7 @@ To connect to your TiDB cluster via standard connection, perform the following s
 
     > **Note:**
     >
-    > Currently, TiDB does not work well with MySQL client 8.0, so you need to use MySQL client 5.7. Or you can add the `--default-auth=mysql_native_password --default-character-set` command line option if you are using MySQL client 8.0.
+    > Currently, TiDB does not work well with MySQL client 8.0, so you need to use MySQL client 5.7. Or you can add the `--default-auth=mysql_native_password --default-character-set=utf8` command line option if you are using MySQL client 8.0.
 
 ## Connect via VPC peering
 
@@ -70,7 +70,7 @@ To connect to your TiDB cluster via VPC peering, perform the following steps:
 
     > **Note:**
     >
-    > Currently, TiDB does not work well with MySQL client 8.0, so you need to use MySQL client 5.7. Or you can add the `--default-auth=mysql_native_password --default-character-set` command line option if you are using MySQL client 8.0.
+    > Currently, TiDB does not work well with MySQL client 8.0, so you need to use MySQL client 5.7. Or you can add the `--default-auth=mysql_native_password --default-character-set=utf8` command line option if you are using MySQL client 8.0.
 
 ## Connect via SQL Shell
 
