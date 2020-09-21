@@ -1,22 +1,6 @@
 version: 2
 
 jobs:
-  lint:
-    docker:
-      - image: circleci/node:lts
-    working_directory: ~/tidbcloud/dbaas-docs
-    steps:
-      steps:
-      - checkout
-      - run:
-          name: "Install markdownlint"
-          command: |
-            sudo npm install -g markdownlint-cli@0.17.0
-      - run:
-          name: "Lint"
-          command: |
-            markdownlint .
-
   build:
     docker:
       - image: andelf/doc-build:0.1.9
@@ -54,9 +38,6 @@ jobs:
 
 workflows:
   version: 2
-  lint:
-    jobs:
-      - lint
   build:
     jobs:
       - build:
